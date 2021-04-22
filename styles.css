@@ -1,7 +1,10 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    background-color: rgb(253, 245, 255);
+    //02.06
+    //background-image: linear-gradient(rgb(200, 230, 255),rgb(235, 253, 255));
 }
 
 nav{
@@ -44,17 +47,27 @@ section{
 
 .hero{
     width: 100%;
-    background-color: rgb(139, 139, 231);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .hero-info{
-    background-color: brown;
     margin: 30px;
     max-width: 300px;
     //1.58
+}
+
+.hero-image{
+    width: 300px;
+    height: 300px;
+}
+
+.styled-break{
+    width: 60px;
+    height: 5px;
+    background-color:rgb(42, 129, 129);
+    margin: 15px 0 15px 0;
 }
 
 #name{
@@ -68,12 +81,12 @@ section{
 .test{
     width: 30px;
     height: 30px;
-    background-color: rgb(21, 199, 169);
+    background-color: rgb(23, 114, 99);
     margin: 5px;
 }
 
 .button{
-    width: 200px;
+    width: 80px;
     text-align: center;
     border: 0;
     font-size: 20px;
@@ -82,7 +95,7 @@ section{
     background-image: linear-gradient(to top left, rgb(117, 175, 117),palegreen );
     box-shadow: inset 2px 2px 3px rgb(255, 255, 255),
         inset -2px -2px 3px;
-    border-radius: 5px
+    border-radius: 10px
 }
 
 .button:hover{
