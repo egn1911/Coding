@@ -1,9 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(253, 245, 255);
-    //02.06
     //background-image: linear-gradient(rgb(200, 230, 255),rgb(235, 253, 255));
 }
 
@@ -20,7 +19,7 @@ nav{
     list-style-type: none;
     text-transform: uppercase;
 }
-
+//2.13
 li{
     margin: 15px 5px;
 }
@@ -32,13 +31,27 @@ li{
 
 section{
     width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to right,rgb(210, 167, 216), rgb(146, 94, 194));
+   //background-image: linear-gradient(to right,rgb(210, 167, 216), rgb(146, 94, 194));
+    background-color: white;
+    //flex-direction: row;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding: 30px 0 0 0
+}
+
+
+.about-me{
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    max-width: 300px;
+    margin: 30px;
 }
 
 #main{
@@ -50,6 +63,7 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .hero-info{
@@ -59,8 +73,8 @@ section{
 }
 
 .hero-image{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .styled-break{
@@ -75,7 +89,8 @@ section{
 }
 
 .avatar{
-    width: 100px;
+    height: 100px;
+    margin: auto;
 }
 
 .test{
