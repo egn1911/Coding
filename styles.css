@@ -69,12 +69,22 @@ section{
 .hero-info{
     margin: 30px;
     max-width: 300px;
-    //1.58
 }
 
 .hero-image{
     width: 250px;
     height: 250px;
+}
+
+@media only screen and (max-width: 700px){
+    .hero-info{
+        max-width: 700px;
+    }
+
+    .hero-image{
+        visibility: hidden;
+        height: 0px;
+    }
 }
 
 .styled-break{
@@ -110,7 +120,7 @@ section{
     background-image: linear-gradient(to top left, rgb(117, 175, 117),palegreen );
     box-shadow: inset 2px 2px 3px rgb(255, 255, 255),
         inset -2px -2px 3px;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .button:hover{
@@ -121,8 +131,25 @@ section{
     box-shadow: inset -2px -2px 3px white;
 }
 
+.input-section{
+    margin: 10px 0;
+    display: flex;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 0;
+}
+
 footer{
     font-family: 'Zen Dots', cursive;
+}
+
+@media only screen and (min-width: 700px){
+    footer{
+        background-color: rgb(163, 238, 232);
+    }
 }
 
 a{
